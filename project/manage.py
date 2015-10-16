@@ -11,4 +11,7 @@ manager = Manager(app)
 manager.add_command('db', MigrateCommand)
 
 if __name__ == '__main__':
+    from crews.models.crew_battle import CrewBattle
+    from crews.models.crew_match import CrewMatch
+    from crews.models.match_result import MatchResult
     manager.run()
